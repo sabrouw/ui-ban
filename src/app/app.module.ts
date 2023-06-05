@@ -9,6 +9,9 @@ import { MenuComponent } from './components/menu/menu.component';
 import { UserDashboardComponent } from './pages/user-dashboard/user-dashboard.component';
 import { LightInfosComponent } from './components/light-infos/light-infos.component';
 import { MyTransactionComponent } from './pages/my-transaction/my-transaction.component';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ContactListComponent } from './pages/contact-list/contact-list.component';
 
 @NgModule({
   declarations: [
@@ -19,10 +22,13 @@ import { MyTransactionComponent } from './pages/my-transaction/my-transaction.co
     UserDashboardComponent,
     LightInfosComponent,
     MyTransactionComponent,
+    ContactListComponent,
   ],
   imports: [
+    MatSlideToggleModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
