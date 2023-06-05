@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { MenuComponent } from './components/menu/menu.component';
+import { UserDashboardComponent } from './pages/user-dashboard/user-dashboard.component';
+import { LightInfosComponent } from './components/light-infos/light-infos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    MenuComponent
+    MenuComponent,
+    UserDashboardComponent,
+    LightInfosComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,30 @@
+
+   <div class="p-4">
+    <h2>Mon compte en un coup d'oeil</h2>
+    <div class="card d-flex flex-row justify-content-between p-5"> 
+        
+      <app-light-infos *ngFor="let info of accountInfosList"
+                      [infoInput]="info"
+      ></app-light-infos> 
+      
+            
+            </div> 
+    </div>        
+
+    <div class="card m-3 p-3">
+        <div class="d-flex flex-row align-items-start p-2 ">
+            <div>
+                <label for="start-date" class="form-label">Date de début</label>
+                <input type="text" class="form-control" id="sartdate" placeholder="__/__/____">
+              </div>
+              <div>
+                <label for="end-date" class="form-label">Date de fin</label>
+                <input type="text" class="form-control" id="enddate" placeholder="__/__/____">
+              </div>
+       
+    </div>
+</div>
+        
+<div class="card mp-3">
+
+</div>
