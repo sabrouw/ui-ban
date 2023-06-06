@@ -23,7 +23,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule, MatSelectionList } from '@angular/material/list';
 import { MatFormFieldModule} from  '@angular/material/form-field'
 import { MatSelectModule} from '@angular/material/select'
-import { MatCardModule}from '@angular/material/card'
+import { MatCardModule}from '@angular/material/card';
+import { NewContactComponent } from './pages/new-contact/new-contact.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +37,7 @@ import { MatCardModule}from '@angular/material/card'
     ContactListComponent,
     NewTransactionComponent,
     NavbarComponent,
+    NewContactComponent,
 
   ],
   imports: [
