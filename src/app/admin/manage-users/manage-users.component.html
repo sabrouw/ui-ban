@@ -1,0 +1,66 @@
+<h2 class="m-3">Gestion des utilisateurs</h2>
+
+<div class="m-3 d-flex justify-content-end">
+  <mat-slide-toggle>Voir les utilisateurs inactifs</mat-slide-toggle>
+
+
+
+</div>
+
+<table class=" striped highlight responsive-table m-5 p-3 w-75">
+    <thead>
+      <tr>
+          <th>Nom</th>
+          <th>Prénom</th>
+          <th>Statut</th>
+          <th>IBAN</th>
+          <th>Actions</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Alvin</td>
+        <td>Eclair</td>
+        <div class="demo-section">
+          <button mat-raised-button matBadge="8">Inactif</button>
+        </div>
+        <td>$0.87</td>
+        <td>
+          <mat-slide-toggle class="active"></mat-slide-toggle>
+          &nbsp; | &nbsp;
+          <em class="fas fa-trash text-danger"></em>
+        </td>
+      </tr>
+      <tr>
+        <td>Alan</td>
+        <td>Jellybean</td>
+        <button mat-raised-button color="primary"
+        matBadge="8" matBadgePosition="before" matBadgeColor="accent">
+        &nbsp;Actif&nbsp;
+    </button>
+        <td>$3.76</td>
+        <td><mat-slide-toggle></mat-slide-toggle>
+          &nbsp; | &nbsp;
+          <em class="fas fa-trash text-danger"></em>
+        </td>
+      </tr>
+      <tr>
+        <td>Jonathan</td>
+        <td>Lollipop</td>
+        <button mat-raised-button color="primary"
+        matBadge="8" matBadgePosition="before" matBadgeColor="accent">
+        &nbsp;Actif&nbsp;
+    </button>
+        <td>$7.00</td>
+        <td><mat-slide-toggle></mat-slide-toggle>
+            &nbsp; | &nbsp;
+            <em class="fas fa-trash text-danger"></em>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+
