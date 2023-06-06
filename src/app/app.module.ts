@@ -24,7 +24,8 @@ import { MatListModule, MatSelectionList } from '@angular/material/list';
 import { MatFormFieldModule} from  '@angular/material/form-field'
 import { MatSelectModule} from '@angular/material/select'
 import { MatCardModule}from '@angular/material/card';
-import { NewContactComponent } from './pages/new-contact/new-contact.component'
+import { NewContactComponent } from './pages/new-contact/new-contact.component';
+import { MyProfileComponent } from './pages/my-profile/my-profile.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +39,7 @@ import { NewContactComponent } from './pages/new-contact/new-contact.component'
     NewTransactionComponent,
     NavbarComponent,
     NewContactComponent,
+    MyProfileComponent,
 
   ],
   imports: [
