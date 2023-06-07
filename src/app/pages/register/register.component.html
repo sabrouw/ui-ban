@@ -1,10 +1,10 @@
-<div class="container-fluid card form-control w-50 p-3">
+<div class="container-fluid card form-control w-50 p-3 mt-5">
     <h3 class="text-center">Créé un compte</h3>
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Email</label>
         <input type="email" class="form-control" id="input_email" placeholder="nomprenom@exemple.com">
       </div>
-      
+
       <div class="mb-3">
         <label for="firstName" class="form-label" >Nom</label>
         <input class="form-control" id="input_firstName" placeholder="Nom"rows="3">
@@ -23,10 +23,12 @@
             <input class="form-control" id="input_password_repeat" placeholder="Mot de passe"rows="3">
           </div>
           Valider la création de votre compte?&nbsp;
-        <button type="btn"class="btn btn-primary" id="input_register_ok">
-            <em class="fas fa-sign-in-alt"></em>&nbsp; Creer un compte</button>
-      </div>
-     
+          <button mat-raised-button color="primary"><em class="fas fa-sign-in-alt"></em>&nbsp; Creer un compte</button>
+          <button (click)="login()"mat-raised-button color="primary" class="ms-3"><em class="fas fa-sign-in-alt "></em>&nbsp;Connexion</button> 
       
+          
+    </div>
+
+
 </div>
 

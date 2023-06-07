@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './pages/login/login.component';
+import { LoginComponent } from "./pages/login/LoginComponent";
 import { RegisterComponent } from './pages/register/register.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { UserDashboardComponent } from './pages/user-dashboard/user-dashboard.component';
@@ -14,7 +14,6 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactListComponent } from './pages/contact-list/contact-list.component';
 import { NewTransactionComponent } from './pages/new-transaction/new-transaction.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
@@ -26,7 +25,11 @@ import { MatSelectModule} from '@angular/material/select'
 import { MatCardModule}from '@angular/material/card';
 import { NewContactComponent } from './pages/new-contact/new-contact.component';
 import { MyProfileComponent } from './pages/my-profile/my-profile.component';
-import { ManageUsersComponent } from './admin/manage-users/manage-users.component'
+import { ManageUsersComponent } from './admin/manage-users/manage-users.component';
+import { MatMenuModule } from '@angular/material/menu';
+import { MainPageComponent } from './pages/main-page/main-page.component';
+import { MainAdminPageComponent } from './admin/main-admin-page/main-admin-page.component';
+import { AdminDashboardComponent } from './admin/admin-dashboard/admin-dashboard.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,10 +41,12 @@ import { ManageUsersComponent } from './admin/manage-users/manage-users.componen
     MyTransactionComponent,
     ContactListComponent,
     NewTransactionComponent,
-    NavbarComponent,
     NewContactComponent,
     MyProfileComponent,
     ManageUsersComponent,
+    MainPageComponent,
+    MainAdminPageComponent,
+    AdminDashboardComponent,
 
   ],
   imports: [
@@ -57,7 +62,8 @@ import { ManageUsersComponent } from './admin/manage-users/manage-users.componen
     MatListModule,
     MatFormFieldModule,
     MatSelectModule,
-    MatCardModule
+    MatCardModule, 
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

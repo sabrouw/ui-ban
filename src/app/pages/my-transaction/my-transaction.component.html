@@ -1,13 +1,14 @@
+
 <h2 class="m-3">Mes transactions</h2>
 
 <div class="m-3 d-flex justify-content-end">
-    <button class="btn btn-success">
+    <button (click)="newTransaction()" class="btn btn-success">
         <em class="fas fa-plus"></em>
         &nbsp;Nouvelle transaction
     </button>
 </div>
 
-<table class=" striped highlight responsive-table m-5 p-3">
+<table class=" striped highlight responsive-table  m-1 p-3">
     <thead>
       <tr>
           <th>Date</th>
@@ -38,6 +39,6 @@
       </tr>
     </tbody>
   </table>
-        
+
 
 
